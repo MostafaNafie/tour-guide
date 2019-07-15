@@ -13,24 +13,30 @@ import com.mostafanafie.tourguide.Fragments.CairoFragment;
 import com.mostafanafie.tourguide.Fragments.DahabFragment;
 import com.mostafanafie.tourguide.Fragments.LuxorFragment;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
+
+    // Initialize the ViewPager
+    @BindView(R.id.container) ViewPager mViewPager;
+    // Initialize the TabLayout
+    @BindView(R.id.sliding_tabs) TabLayout mTabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         //Remove title bar
         getSupportActionBar().hide();
-
         setContentView(R.layout.activity_main);
 
-        // Initialize the ViewPager
-        ViewPager mViewPager = findViewById(R.id.container);
+        // Initialize ButterKnife
+        ButterKnife.bind(this);
+
         // Setup the ViewPager
         setupViewPager(mViewPager);
         // Attach the ViewPager to the TabLayout
-        TabLayout tabLayout = findViewById(R.id.sliding_tabs);
-        tabLayout.setupWithViewPager(mViewPager);
+        mTabLayout.setupWithViewPager(mViewPager);
     }
 
     private void setupViewPager(ViewPager viewPager) {

@@ -18,15 +18,28 @@ import com.mostafanafie.tourguide.Adapters.RecyclerViewAdapter;
 
 import java.util.ArrayList;
 
+import butterknife.BindArray;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class AswanFragment extends Fragment {
 
     // Initialize the ArrayList
     private ArrayList<Attraction> mAttractionsList = new ArrayList<>();
+    // Initialize the recycler view
+    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    // Initialize city data
+    @BindArray(R.array.aswan_names) String[] names;
+    @BindArray(R.array.aswan_descriptions) String[] descriptions;
+    @BindArray(R.array.aswan_images) TypedArray images;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_attractions, container, false);
+
+        // Initialize ButterKnife
+        ButterKnife.bind(this,view);
 
         // Check if this is not the first time to load the fragment
         // To avoid duplicate items in the ArrayList
@@ -42,18 +55,12 @@ public class AswanFragment extends Fragment {
 
     private void setupArrayList() {
         // Populate the ArrayList with attractions
-        String[] names = getResources().getStringArray(R.array.aswan_names);
-        String[] descriptions = getResources().getStringArray(R.array.aswan_descriptions);
-        TypedArray images = getResources().obtainTypedArray(R.array.aswan_images);
-
         for (int i = 0; i < names.length; i++) {
             mAttractionsList.add(new Attraction(names[i], descriptions[i], images.getResourceId(i, 0)));
         }
     }
 
     private void setupRecyclerView(View view) {
-        // Initialize the recycler view
-        RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         // Initialize the adapter, and pass the ArrayList to it
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(mAttractionsList);
         // Attach the adapter to the recycler view

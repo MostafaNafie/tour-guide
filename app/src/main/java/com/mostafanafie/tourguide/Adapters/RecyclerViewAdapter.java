@@ -15,6 +15,9 @@ import com.mostafanafie.tourguide.R;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     // Initialize the ArrayList
@@ -49,18 +52,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         // Initialize the views of the list item
-        ConstraintLayout parentLayout;
-        ImageView imageView;
-        TextView nameTextView;
-        TextView descriptionTextView;
+        @BindView(R.id.parent_layout) ConstraintLayout parentLayout;
+        @BindView(R.id.imageView) ImageView imageView;
+        @BindView(R.id.textView_name) TextView nameTextView;
+        @BindView(R.id.textView_description) TextView descriptionTextView;
 
         // Constructor
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            parentLayout = itemView.findViewById(R.id.parent_layout);
-            imageView = itemView.findViewById(R.id.imageView);
-            nameTextView = itemView.findViewById(R.id.textView_name);
-            descriptionTextView = itemView.findViewById(R.id.textView_description);
+            // Initialize ButterKnife
+            ButterKnife.bind(this, itemView);
         }
     }
 

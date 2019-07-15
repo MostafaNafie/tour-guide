@@ -54,6 +54,7 @@ public class DahabFragment extends Fragment {
     }
 
     private void setupArrayList() {
+        // Populate the ArrayList with attractions
         for (int i = 0; i < names.length; i++) {
             mAttractionsList.add(new Attraction(names[i], descriptions[i], images.getResourceId(i, 0)));
         }

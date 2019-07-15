@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+
+    <!-- Cities Names -->
+    <string name="cairo">Cairo</string>
+    <string name="luxor">Luxor</string>
+    <string name="dahab">Dahab</string>
+    <string name="aswan">Aswan</string>
+
+    <!-- Cairo List Items -->
+    <string-array name="cairo_names">
+        <item>Egyptian Museum</item>
+        <item>Cairo Tower</item>
+        <item>Khan Al-Khalili</item>
+        <item>Al-Azhar Park</item>
+        <item>Cairo Citadel</item>
+    </string-array>
+
+    <string-array name="cairo_descriptions">
+        <item>Home to an extensive collection of ancient Egyptian antiquities. It has 120,000 items</item>
+        <item>It has been the tallest structure in Egypt and North Africa for about 50 years</item>
+        <item>Khan el-Khalili is a major souk in the historic center of Islamic Cairo</item>
+        <item>This park is listed as one of the world\'s sixty great public spaces by the Project for Public Spaces</item>
+        <item>The Saladin Citadel of Cairo is a medieval Islamic fortification</item>
+    </string-array>
+
+    <!-- Luxor List Items -->
+    <string-array name="luxor_names">
+        <item>Amun Temple Enclosure</item>
+        <item>Valley of the Kings</item>
+        <item>Karnak</item>
+        <item>Medinat Habu</item>
+    </string-array>
+
+    <string-array name="luxor_descriptions">
+        <item>Amun-Ra was the local god of Karnak (Luxor)</item>
+        <item>The west bank of Luxor had been the site of royal burials since around 2100 BC</item>
+        <item>Karnak is an extraordinary complex of sanctuaries</item>
+        <item>Ramses III\’s magnificent memorial temple of Medinat Habu</item>
+    </string-array>
+
+    <!-- Dahab List Items -->
+    <string-array name="dahab_names">
+        <item>Monastery Mountain</item>
+        <item>Blue Hole</item>
+        <item>White Canyon</item>
+        <item>Ras Safsafa</item>
+    </string-array>
+
+    <string-array name="dahab_descriptions">
+        <item>An impressive Sinai mountain to behold where you can find great hiking ascents</item>
+        <item>Carved into a reef, 8km north of Dahab, is Egypt’s most infamous dive site</item>
+        <item>A camel safari or 4x4 safari to Ain Khudra oasis is the perfect starting point for a trek into the White Canyon</item>
+        <item>Bedouin guides can recommend several routes that vary in difficulty to reach the peak</item>
+    </string-array>
+
+    <!-- Aswan List Items -->
+    <string-array name="aswan_names">
+        <item>Nubia Museum</item>
+        <item>Aswan Botanical Gardens</item>
+        <item>Ruins of Abu</item>
+        <item>Unfinished Obelisk</item>
+    </string-array>
+
+    <string-array name="aswan_descriptions">
+        <item>The little-visited Nubia Museum, opposite Basma Hotel, is a treat</item>
+        <item>Kitchener’s Island, to the west of Elephantine Island</item>
+        <item>The evocative ruins of ancient Abu and the Aswan Museum</item>
+        <item>Aswan was the source of ancient Egypt’s finest granite, used to make statues and embellish temples</item>
+    </string-array>
+
+    <string name="image_description">Attraction Image</string>
+    <string name="logo_description">Logo</string>
+</resources>

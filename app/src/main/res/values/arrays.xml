@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Cairo Images -->
+    <array name="cairo_images">
+        <item>@drawable/egyptian_museum</item>
+        <item>@drawable/cairo_tower</item>
+        <item>@drawable/khan_al_khalili</item>
+        <item>@drawable/al_azhar_park</item>
+        <item>@drawable/citadel</item>
+    </array>
+
+    <!-- Luxor Images -->
+    <array name="luxor_images">
+        <item>@drawable/amun_temple</item>
+        <item>@drawable/valley_of_kings</item>
+        <item>@drawable/karnak</item>
+        <item>@drawable/medinat_habu</item>
+    </array>
+
+    <!-- Dahab Images -->
+    <array name="dahab_images">
+        <item>@drawable/monastery</item>
+        <item>@drawable/blue</item>
+        <item>@drawable/white_canyon</item>
+        <item>@drawable/ras_safsafa</item>
+    </array>
+
+    <!-- Aswan Images -->
+    <array name="aswan_images">
+        <item>@drawable/nubia_museum</item>
+        <item>@drawable/aswan_botanical_gardens</item>
+        <item>@drawable/ruins_of_abu</item>
+        <item>@drawable/unfinished_obelisk</item>
+    </array>
+
+</resources>

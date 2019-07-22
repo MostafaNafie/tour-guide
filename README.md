@@ -4,4 +4,6 @@
 ### Create an app to guide a user around a city or location of your choice!
 The app shows some of the attractions of Egypt.
 
-<img src="https://www.dropbox.com/s/tuv9dyule6h4ser/%235%20Tour%20Guide.png?raw=1" width="270">
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/48848704/61654896-bb23e900-acbd-11e9-8246-2ad61032448c.gif" width="270">
+</div>
